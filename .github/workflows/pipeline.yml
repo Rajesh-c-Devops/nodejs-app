@@ -25,18 +25,10 @@ jobs:
              cd Terraform
              terraform init
 
-      - name: Terraform Plan
+      - name: Terraform validate
         run: |
              cd Terraform
-             terraform plan
-
-      - name: Terraform Apply
-        run: |
-             cd Terraform
-             terraform apply -auto-approve
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+             terraform validate
 
   teardown:
     runs-on: ubuntu-latest
@@ -55,8 +47,3 @@ jobs:
       - name: Terraform Init
         run: terraform init
 
-      - name: Terraform Destroy
-        run: terraform destroy -auto-approve
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
