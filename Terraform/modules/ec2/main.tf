@@ -1,4 +1,4 @@
-resource "aws_instance" "nginx_instance" {
+resource "aws_instances" "nginx_instance" {
   ami           = "ami-0c55b159cbfafe1f0" 
   instance_type = "t2.micro"             
   key_name      = "key-pair" 
@@ -29,5 +29,5 @@ resource "aws_instance" "nginx_instance" {
 }
 
 output "instance_public_ip" {
-  value = "${aws_instance.nginx_instance.public_ip}"
+  value = "${aws_instances.nginx_instance.public_ip}"
 }
