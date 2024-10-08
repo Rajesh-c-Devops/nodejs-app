@@ -6,5 +6,5 @@ resource "aws_s3-bucket" "bucket" {
 }
 
 output "bucket_name" {
-  value = aws_s3-bucket.bucket.bucket
+  value = "${aws_s3-bucket.bucket.bucket}"
 }
