@@ -1,4 +1,4 @@
-resource "aws_s3-bucket" "bucket" {
+resource "aws_s3_bucket" "bucket" {
   bucket = var.bucket_name
   tags = {
     Name = "S3 Bucket for Docker Images"
@@ -6,5 +6,5 @@ resource "aws_s3-bucket" "bucket" {
 }
 
 output "bucket_name" {
-  value = "${aws_s3-bucket.bucket.bucket}"
+  value = "${aws_s3_bucket.bucket.bucket}"
 }
