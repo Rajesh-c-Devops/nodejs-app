@@ -27,9 +27,6 @@ flowchart TD
     B --> C[Checkout Code]
     C --> D[Set up Terraform]
     D --> E[Terraform Init]
-    E --> F[Terraform Plan]
-    F --> G{Terraform Apply}
-    G -->|Success| H[Deploy Node.js App]
-    G -->|Fail| I[Notify Failure]
-    H --> J[Application Accessible via URL]
+    E --> F[Terraform Validate]
+
 
