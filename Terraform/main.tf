@@ -11,13 +11,13 @@ provider "aws" {
   region = var.region
 }
 
-module "ec2-instances" {
+module "ec2" {
   source        = "./modules/ec2"
   instance_name = var.instance_name
   region        = var.region
 }
 
-module "s3-bucket" {
+module "s3" {
   source        = "./modules/s3"
   bucket_name   = var.bucket_name
   region        = var.region
