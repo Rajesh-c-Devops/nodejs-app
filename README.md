@@ -19,6 +19,9 @@ This repository demonstrates how to set up a Continuous Integration and Continuo
 
 ## Getting Started
 
+Current Status
+Note: As of now, an AWS account is not available for testing and deployment. Therefore, the Terraform templates and CI/CD pipeline have been updated to support deployment processes without AWS account integration. These updates include configuring placeholders for AWS resources and refactoring the CI/CD pipeline to allow for easy integration once AWS credentials become available.
+
 Below is a flowchart illustrating the CI/CD pipeline:
 
 ```mermaid
