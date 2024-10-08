@@ -7,6 +7,7 @@ variable "region" {
 variable "instance_name" {
   description = "Name of the EC2 instance"
   type        = string
+  default = "dev-ec2"
 }
 
 variable "bucket_name" {
