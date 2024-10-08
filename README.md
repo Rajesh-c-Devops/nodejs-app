@@ -17,10 +17,12 @@ This repository demonstrates how to set up a Continuous Integration and Continuo
 - **Terraform**: Installed locally for testing and validation.
 - **Docker**: Installed locally if you want to build images.
 
-## Getting Started
 
-Current Status
+
+## Current Status
 Note: As of now, an AWS account is not available for testing and deployment. Therefore, the Terraform templates and CI/CD pipeline have been updated to support deployment processes without AWS account integration. These updates include configuring placeholders for AWS resources and refactoring the CI/CD pipeline to allow for easy integration once AWS credentials become available.
+
+## Getting Started
 
 Below is a flowchart illustrating the CI/CD pipeline: 
 
